@@ -9,8 +9,35 @@
         
     </body>
     <script>
+
         function getRandomInt(max) {
             return Math.floor(Math.random()* max)
+
+        var humanScore = 0;
+        var botScore = 0;
+        var tie = 0;
+
+        function tiewinScenario(){
+            if(humanChoice==="rock" && botChoice==="rock"
+            || humanChoice==="paper" && botChoice==="paper"
+            || humanChoice==="scissors" && botChoice==="scissors"){
+                tie++
+            }
+        }
+        function humanwinScenario(){
+            if(humanChoice==="rock" && botChoice==="scissors"
+            || humanChoice==="paper" && botChoice==="rock"
+            || humanChoice==="scissors" && botChoice==="paper"){
+                humanScore++
+            }
+        }
+        function botwinScenario(){
+            if(humanChoice==="rock" && botChoice==="paper"
+            || humanChoice==="paper" && botChoice==="scissors"
+            || humanChoice==="scissors" && botChoice==="rock"){
+                botScore++
+            }
+          
         }
     </script>
 </html>

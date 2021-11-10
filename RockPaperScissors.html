@@ -6,22 +6,54 @@
         
     </style>
     <body>
-        <button>rock</button>
-        <button>paper</button>
-        <button>scissors</button>
+        <button id="rock">rock</button>
+        <button id="paper">paper</button>
+        <button id="scissors">scissors</button>
         <h3>Human Score:<span id="humanScore">0</span></h3>
         <h3>Bot Score:<span id="botScore">0</span></h3>
         <h3>Tie:<span id="tie">0</span></h3>
         <div></div>
     </body>
     <script>
-
+    
         function getRandomInt(max) {
             return Math.floor(Math.random()* max)
-
+        }
         var humanScore = 0;
         var botScore = 0;
         var tie = 0;
+        var rock = document.getElementById("rock");
+        var paper = document.getElementById("paper");
+        var scissors = document.getElementById("scissors");
+        var humanChoice;
+        var botChoice;
+
+        rock.onclick = function() {
+            console.log("rock");
+            humanChoice === "rock";
+            botChoice = getRandomInt(3);
+            if(botChoice = 1){
+                botChoice = "rock";
+            }
+            else if(botChoice = 2){
+                botChoice = "paper";
+            }
+            else{
+                botChoice = "scissors"
+            }
+            tiewinScenario();
+            humanwinScenario();
+            botwinScenario();
+        }
+
+        paper.onclick = function() {
+            console.log("paper");
+        }
+
+        scissors.onclick = function(){
+            console.log("scissors");
+        }
+
 
         function tiewinScenario(){
             if(humanChoice==="rock" && botChoice==="rock"
@@ -43,8 +75,6 @@
             || humanChoice==="scissors" && botChoice==="rock"){
                 botScore++
             }
-          
-        }
-    }
+        } 
     </script>
 </html>

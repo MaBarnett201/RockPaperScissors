@@ -40,7 +40,9 @@
         {
             if(option === "rock")
             {
-                console.log(humanScore);
+                $("#humanScore").text(humanScore)
+                $("#botScore").text(botScore)
+                $("#tie").text(tie)
                 humanChoice = "rock"
                 botChoice = choices[Math.floor(Math.random()* 3)]
                 humanwinScenario();
@@ -49,7 +51,9 @@
             }
             else if(option === "paper")
             {
-                console.log(humanScore);
+                $("#humanScore").text(humanScore)
+                $("#botScore").text(botScore)
+                $("#tie").text(tie)
                 humanChoice = "paper"
                 botChoice = choices[Math.floor(Math.random()* 3)]
                 humanwinScenario();
@@ -58,7 +62,9 @@
             }
             else if(option === "scissors")
             {
-                console.log(humanScore);
+                $("#humanScore").text(humanScore)
+                $("#botScore").text(botScore)
+                $("#tie").text(tie)
                 humanChoice = "scissors"
                 botChoice = choices[Math.floor(Math.random()* 3)]
                 humanwinScenario();

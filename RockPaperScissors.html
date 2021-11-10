@@ -3,16 +3,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <style>
-        
+        .rock{
+            opacity:1
+        }
+        .paper{
+            opacity:1
+        }
+        .scissors{
+            opacity:1
+        }
     </style>
     <body>
+
         <button id="rock">rock</button>
         <button id="paper">paper</button>
         <button id="scissors">scissors</button>
+
+        <button class=rock>rock</button>
+        <button class=paper>paper</button>
+        <button class=scissors>scissors</button>
+
         <h3>Human Score:<span id="humanScore">0</span></h3>
         <h3>Bot Score:<span id="botScore">0</span></h3>
         <h3>Tie:<span id="tie">0</span></h3>
-        <div></div>
     </body>
     <script>
     
@@ -74,7 +87,10 @@
             || humanChoice==="paper" && botChoice==="scissors"
             || humanChoice==="scissors" && botChoice==="rock"){
                 botScore++
+
             }
         } 
+            } 
+        }
     </script>
 </html>

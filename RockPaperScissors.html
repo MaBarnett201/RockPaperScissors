@@ -7,8 +7,11 @@
             opacity:1;
             display:block
         }
-        .flex{
+        .flex-box{
             display:flex
+        }
+        button{
+            width:100px;
         }
     </style>
     <body>
@@ -16,18 +19,20 @@
         <h3>Bot Score:<span id="botScore">0</span></h3>
         <h3>Tie:<span id="tie">0</span></h3>
         <!-- <button id="rock" onclick="choice('rock')">Click To Start Game!</button><br/><br/> -->
-        <div class=column>
-        <button id="rock" onclick="choice('rock')">rock</button>
-        <br/><img src="Rock.jpg" about="" style=width:100px;height:100px>
+        <div class="flex-box">
+            <div class=column>
+            <button id="rock" onclick="choice('rock')">rock</button>
+            <br/><img src="Rock.jpg" about="" style=width:100px;height:100px>
+            </div>
+            <div class=column>
+            <button id="paper" onclick="choice('paper')">paper</button>
+            <br/><img src="Paper.jpg" about="" style=width:100px;height:100px>
+            </div>
+            <div class=column>
+            <button id="scissors" onclick="choice('scissors')">scissors</button>
+            <br/><img src="Scissors.jpg" about="" style=width:100px;height:100px>
+            </div>
         </div>
-        <div class=column>
-        <button id="paper" onclick="choice('paper')">paper</button>
-        <br/><img src="Paper.jpg" about="" style=width:100px;height:100px>
-        </div>
-        <div class=column>
-        <button id="scissors" onclick="choice('scissors')">scissors</button>
-        <br/><img src="Scissors.jpg" about="" style=width:100px;height:100px>
-    </div>
         
     </body>
     <script>

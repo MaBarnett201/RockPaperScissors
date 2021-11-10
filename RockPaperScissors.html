@@ -34,24 +34,36 @@
         var humanChoice;
 
         const choices = ["rock","paper","scissors"];
-        const botChoice = choices[Math.floor(Math.random()* 3)];
+        var botChoice = choices[Math.floor(Math.random()* 3)];
 
         function choice(option)
         {
             if(option === "rock")
             {
-                console.log("You chose rock");
+                console.log(humanScore);
+                humanChoice = "rock"
+                botChoice = choices[Math.floor(Math.random()* 3)]
                 humanwinScenario();
                 botwinScenario();
                 tiewinScenario();
             }
             else if(option === "paper")
             {
-                console.log("You chose paper");
+                console.log(humanScore);
+                humanChoice = "paper"
+                botChoice = choices[Math.floor(Math.random()* 3)]
+                humanwinScenario();
+                botwinScenario();
+                tiewinScenario();
             }
             else if(option === "scissors")
             {
-                console.log("You chose scissors");
+                console.log(humanScore);
+                humanChoice = "scissors"
+                botChoice = choices[Math.floor(Math.random()* 3)]
+                humanwinScenario();
+                botwinScenario();
+                tiewinScenario();
             }
         }
 

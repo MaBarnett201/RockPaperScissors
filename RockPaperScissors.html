@@ -3,25 +3,28 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <style>
-        .rock{
-            opacity:1
-        }
-        .paper{
-            opacity:1
-        }
-        .scissors{
+        .column{
             opacity:1
         }
     </style>
     <body>
-
-        <button id="rock" onclick="choice('rock')">rock</button>
-        <button id="paper" onclick="choice('paper')">paper</button>
-        <button id="scissors" onclick="choice('scissors')">scissors</button>
-
         <h3>Human Score:<span id="humanScore">0</span></h3>
         <h3>Bot Score:<span id="botScore">0</span></h3>
         <h3>Tie:<span id="tie">0</span></h3>
+        <!-- <button id="rock" onclick="choice('rock')">Click To Start Game!</button><br/><br/> -->
+        <div class=column>
+        <button id="rock" onclick="choice('rock')">rock</button>
+        <br/><img src="Rock.jpg" about="" style=width:100px;height:100px>
+        </div>
+        <div class=column>
+        <button id="paper" onclick="choice('paper')">paper</button>
+        <br/><img src="Paper.jpg" about="" style=width:100px;height:100px>
+        </div>
+        <div class=column>
+        <button id="scissors" onclick="choice('scissors')">scissors</button>
+        <br/><img src="Scissors.jpg" about="" style=width:100px;height:100px>
+    </div>
+        
     </body>
     <script>
     

@@ -60,7 +60,7 @@
         {
             if(option === "rock")
             {
-                $("#humanScore").text(humanScore)
+                $("#botScore").text(botScore)
                 $("#botScore").text(botScore)
                 $("#tie").text(tie)
                 humanChoice = "rock"
@@ -98,6 +98,9 @@
             || humanChoice==="paper" && botChoice==="paper"
             || humanChoice==="scissors" && botChoice==="scissors"){
                 tie++
+                $("#tie").text(tie)
+                console.log("T")
+                alert("Tie")
             }
         }
         function humanwinScenario(){
@@ -105,6 +108,9 @@
             || humanChoice==="paper" && botChoice==="rock"
             || humanChoice==="scissors" && botChoice==="paper"){
                 humanScore++
+                $("#humanScore").text(humanScore)
+                console.log("W")
+                alert("You Win")
             } 
         }
         function botwinScenario(){
@@ -112,6 +118,9 @@
             || humanChoice==="paper" && botChoice==="scissors"
             || humanChoice==="scissors" && botChoice==="rock"){
                 botScore++
+                $("#botScore").text(botScore)
+                console.log("L")
+                alert("You Lose")
             }
         } 
     </script>

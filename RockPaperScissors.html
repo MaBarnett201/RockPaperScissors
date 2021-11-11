@@ -15,32 +15,36 @@
         button{
             width:100px;
         }
+        body {
+            background-color:teal;
+        }
     </style>
     <body>
         <div class=column style=text-align:center>
         <h3>Human Score:<span id="humanScore">0</span></h3>
         <h3>Bot Score:<span id="botScore">0</span></h3>
         <h3>Tie:<span id="tie">0</span></h3>
+        <h4>Test your luck!</h4>
     </div>
         <!-- <button id="rock" onclick="choice('rock')">Click To Start Game!</button><br/><br/> -->
         <div class="flex-box">
             <div class=column>
-            <button id="rock" onclick="choice('rock')">rock</button>
+            <button id="rock" onclick="choice('rock')" style="background-color:lightgreen">rock</button>
             <br/><img src="Rock.jpg" about="" style=width:100px;height:100px>
             </div>
             <div class=column>
-            <button id="paper" onclick="choice('paper')">paper</button>
+            <button id="paper" onclick="choice('paper')" style="background-color:lightblue">paper</button>
             <br/><img src="Paper.jpg" about="" style=width:100px;height:100px>
             </div>
             <div class=column>
-            <button id="scissors" onclick="choice('scissors')">scissors</button>
+            <button id="scissors" onclick="choice('scissors')" style="background-color: lightcoral">scissors</button>
             <br/><img src="Scissors.jpg" about="" style=width:100px;height:100px>
             </div>
         </div>
         
     </body>
     <script>
-    
+    //Add an empty paragraph that updates when a winner is decided.
         var humanScore = 0;
         var botScore = 0;
         var tie = 0;
